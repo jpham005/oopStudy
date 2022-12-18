@@ -33,9 +33,6 @@ JC	:=	javac
 #
 
 CLASSES = \
-	factory/*.java \
-	singleton/*.java \
-	decorator/*.java \
 	Main.java 
 
 #
@@ -60,4 +57,4 @@ classes: $(CLASSES:.java=.class)
 #
 
 clean:
-	$(RM) *.class
+	$(RM) *.class */*.class
