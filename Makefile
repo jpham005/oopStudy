@@ -34,6 +34,7 @@ JC	:=	javac
 
 CLASSES = \
 	singleton/*.java \
+	decorator/*.java \
 	Main.java 
 
 #
