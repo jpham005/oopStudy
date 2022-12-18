@@ -33,6 +33,7 @@ JC	:=	javac
 #
 
 CLASSES = \
+	factory/*.java \
 	singleton/*.java \
 	decorator/*.java \
 	Main.java 
