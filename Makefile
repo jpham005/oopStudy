@@ -33,7 +33,8 @@ JC	:=	javac
 #
 
 CLASSES = \
-	Main.java 
+	Main.java \
+	*/*.java
 
 #
 # the default make target entry
