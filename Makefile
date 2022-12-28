@@ -33,8 +33,7 @@ JC	:=	javac
 #
 
 CLASSES = \
-	Main.java \
-	*/*.java
+	Main.java
 
 #
 # the default make target entry
@@ -57,5 +56,7 @@ classes: $(CLASSES:.java=.class)
 # RM is a predefined macro in make (RM = rm -f)
 #
 
+RM	:=	rm -rf
+
 clean:
-	$(RM) *.class */*.class
+	@$(RM) *.class **/*.class **/**/*.class **/**/**/*.class **/**/**/**/*.class **/**/**/**/**/*.class
