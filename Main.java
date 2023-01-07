@@ -1,7 +1,7 @@
-import test.DayThree;
+import test.DayFour;
 
 public class Main {
   public static void main(String[] args) {
-    (new DayThree()).test(args);
+    (new DayFour()).test(args);
   }
 }

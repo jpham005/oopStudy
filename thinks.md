@@ -4,3 +4,9 @@
 - java 달력 객체, db: singletone 예제 => 하나만 있어야 하는 것들 || method only
 - 상속: 코드 줄이려고 사용하는게 아님. is a 관계를 만들기 위함. 일반적 -> 구체적 구현. != has a 관계. (객체 합성)
 - decorator: 상속보다 유연한 관계 형성 가능
+- strategy vs command: strategy doesn't containes receiver, and do same job with different logic,
+  command do different job with one logic
+- command => implement protocols... (my opinion: too flexible... restricted is the best?)
+- abstract factory: factory의 확장?
+- product: single, category: multiple => productcategory: both available!
+- 근데 이거 product는 컴포짓 없어야 할 것 같은데
