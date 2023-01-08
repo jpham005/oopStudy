@@ -1,6 +1,7 @@
 package test;
 
 import abstractfactory.UserInfoClient;
+import command.RemoteLoader;
 import composite.CategoryClient;
 
 public class DayFour implements DailyTest {
@@ -14,6 +15,8 @@ public class DayFour implements DailyTest {
     //   System.out.println("UserInfoClient done");
     // }
 
-    CategoryClient.main(args);
+    // CategoryClient.main(args);
+
+    RemoteLoader.main(args);
   }
 }

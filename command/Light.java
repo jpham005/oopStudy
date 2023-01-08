@@ -1,8 +1,14 @@
 package command;
 
+enum LightState {
+  ON,
+  OFF
+}
+
 public class Light {
+
   private String location;
-  private boolean state;
+  private LightState state = LightState.OFF;
 
   public Light(String location) {
     this.location = location;
@@ -16,11 +22,11 @@ public class Light {
     this.location = location;
   }
 
-  public boolean isState() {
+  public LightState getState() {
     return state;
   }
 
-  public void setState(boolean state) {
+  public void setState(LightState state) {
     this.state = state;
   }
 }

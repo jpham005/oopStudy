@@ -1,15 +1,15 @@
 package command;
 
-enum GarageDoorState {
-  UP,
-  DOWN
+enum CeilingFanState {
+  ON,
+  OFF
 }
 
-public class GarageDoor {
+public class CeilingFan {
   private String location;
-  private GarageDoorState state = GarageDoorState.DOWN;
-  
-  public GarageDoor(String location) {
+  private CeilingFanState state = CeilingFanState.OFF;
+
+  public CeilingFan(String location) {
     this.location = location;
   }
 
@@ -21,11 +21,11 @@ public class GarageDoor {
     this.location = location;
   }
 
-  public GarageDoorState getState() {
+  public CeilingFanState getState() {
     return state;
   }
 
-  public void setState(GarageDoorState state) {
+  public void setState(CeilingFanState state) {
     this.state = state;
   }
 }

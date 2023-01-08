@@ -2,7 +2,7 @@ package command;
 
 public class LightOnCommand implements Command {
 
-  Light light;
+  private Light light;
 
   public LightOnCommand(Light light) {
     this.light = light;
@@ -10,7 +10,10 @@ public class LightOnCommand implements Command {
 
   @Override
   public void execute() {
-    light.setState(true);
-    System.out.println(" * light " + light.getLocation() + " turned on.");
+    if (light.getState() == LightState.ON)
+      return;
+
+    light.setState(LightState.ON);
+    System.out.println(light.getLocation() + " Light turned on");
   }
 }
